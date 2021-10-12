@@ -30,6 +30,7 @@
   <h1>数字を当ててみよう！</h1>
   
   <p>1から100のうち一つの数字がランダムに選ばれます。どの数字が選ばれたか推理してください。あなたは10回まで選ばれた数字が何か答えることができます。</p>
+  
 
   <div class ='form'>
     <label for = "guessField">あなたの答えを入力してください</label>
@@ -41,16 +42,33 @@
     <p class = 'guesses'></p>
     <p class = 'lastResult'></p>
     <p class = 'lowOrHi'></p> 
+    
   </div>
+  <p class = greeting></p>
   <script>
+    // プログラムが使用するデータを保持する変数と定数のセットアップ。
 
-   let randomNumber = Math.floor(Math.random()*100)+1;
+    let randomNumber = Math.floor(Math.random()*100)+1;
   　
-   const guesses = document.querySelector('.guesses');
-   const lastResult = document.querySelector('.lastResult');
-   const lowOrHi = document.querySelector('.lowOrHi');
+    const guesses = document.querySelector('.guesses');
+    const lastResult = document.querySelector('.lastResult');
+    const lowOrHi = document.querySelector('.lowOrHi');
+    
+    const　guessSubmit = document.querySelector('.guessSubmit');
+    const guessField = document.querySelector('.guessField');
 
+    function checkGuess(){
+      alert('ここはプレースホルダーです');
+    }
 
+    let name = 'ビンゴさん';
+    name;
+
+    let hello = '、こんにちは';
+    hello;
+    let greeting = name+hello;
+    let aisatsu = document.querySelector('.greeting');
+    aisatsu.innerHTML = greeting;
 
   </script>
 </body>
